@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Интернет-магазин модной обуви Edison Shoes. Главная страница</title>
+  <title>Интернет-магазин электроники Market. Главная страница</title>
 </head>
 <body class="page">
 <header class="page__header page-header">
-  <nav class="page-header__navigation">
+  <nav class="page-header__navigation main-navigation">
    <a class="logo" href="#">
      <img class="logo__image" src="img/" width="" height="" alt=".">
    </a>
@@ -32,34 +32,34 @@
       </li>
     </ul>
     <ul class="user-navigation">
-      <li class="user-navigation__item">
-        <a class="user-navigation__link icon-button" href="#">
-          <span class="icon-button__caption">Валерия</span>
+      <li class="user-navigation__item user-navigation-item">
+        <a class="user-navigation-item__link profile-link" href="#">
+          <span class="profile-link__caption">Валерия</span>
         </a>
       </li>
       <li class="user-navigation__item">
-        <a class="user-navigation__link icon-button" href="#">
+        <a class="user-navigation-item__link profile-link" href="#">
           <span class="user-navigation__caption">Сравнение</span>
           <span class="user-navigation__value">3</span>
         </a>
       </li>
       <li class="user-navigation__item">
-        <a class="user-navigation__link icon-button" href="#">
-          <span class="icon-button__caption">Избранное</span>
-          <span class="icon-button__value">4</span>
+        <a class="user-navigation-item__link profile-link" href="#">
+          <span class="profile-link__caption">Избранное</span>
+          <span class="profile-link__value">4</span>
         </a>
       </li>
       <li class="user-navigation__item">
-        <a class="user-navigation__link icon-button" href="#">
-          <span class="icon-button__caption">Корзина</span>
-          <span class="icon-button__value">2</span>
+        <a class="user-navigation-item__link profile-link" href="#">
+          <span class="profile-link__caption">Корзина</span>
+          <span class="profile-link__value">2</span>
         </a>
       </li>
     </ul>
   </nav>
 </header>
 <main class="page__content">
-  <ul class="breadcrumbs__list">
+  <ul class="breadcrumbs">
     <li class="breadcrumbs__item">
       <a class="breadcrumbs__link" href="#">Главная</a>
     </li>
@@ -70,41 +70,42 @@
       <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Все товары</a>
     </li>
   </ul>
-  <section class="catalog">
-    <h1 class="catalog__title">Электроника</h1>
-    <ul class="catalog__list">
+  <section class="products-section">
+    <h1 class="products-section__title">Электроника</h1>
+    <ul class="products-section__list products catalog">
       <li class="catalog__item">
-        <section class="product product--discount">
-          <h2 class="product__title">Ноутбук ASUS ZenBook Duo 14 UX482EG-HY010T</h2>
+        <section class="product-preview product-preview--discount" data-value="20">
+          <h2 class="product-preview__title">
+            <a class="product-preview__link" href="#">Ноутбук ASUS ZenBook Duo 14 UX482EG-HY010T</a>
+          </h2>
+          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
+               alt="Ноутбук ASUS ZenBook Duo 14 UX482EG-HY010T">
           <p class="product__price">
             144 000 ₽
           </p>
-          <p class="product__previous-price">
+          <p class="product-preview__old-price">
             172 800 ₽
           </p>
-          <p class="product__rating rating">
-            4
-          </p>
+          <div class="product__rating rating">
+            <span class="rating__value">4</span>
+          </div>
           <a class="product__reviews-link" href="#">132 отзыва</a>
-          <p class="product__delivery">
-            Бесплатная доставка по России
-          </p>
-          <p class="product__guarantee">
-            2 года гарантии
-          </p>
-          <button class="product__button button" type="button">В корзину</button>
-          <a class="product__favorite-link icon-button" href="#">
-            <span class="visually-hidden">Добавить в избранное</span>
-          </a>
-          <a class="product__favorite-link icon-button" href="#">
-            <span class="visually-hidden">Добавить в сравнение</span>
-          </a>
+          <p class="product-preview__info">Бесплатная доставка по России 2 года гарантии</p>
+          <div class="product-preview__controls">
+            <button class="product-preview__button button" type="button">В корзину</button>
+            <a class="product-preview__button image-button" href="#">
+              <span class="visually-hidden">Добавить в избранное</span>
+            </a>
+            <a class="product-preview__button image-button image-button--active" href="#">
+              <span class="visually-hidden">Добавить в сравнение</span>
+            </a>
+          </div>
         </section>
       </li>
     </ul>
     <ul class="catalog__pagination pagination">
       <li class="pagination__item">
-        <a class="pagination__link" href="#">
+        <a class="pagination__link pagination__link--disabled" href="#">
           <span class="visually-hidden">Назад</span>
         </a>
       </li>
