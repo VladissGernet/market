@@ -1,0 +1,165 @@
+.product-preview {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-preview--hit::before {
+  content: "Хит продаж";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1;
+  color: #c23564;
+  background-color: #fdedf2;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.product-preview--instalment::before {
+  content: "Рассрочка " attr(data-value);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1;
+  color: #e08701;
+  background-color: #fff5e6;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.product-preview--discount::before {
+  content: "Скидка " attr(data-value) "%";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1;
+  color: #37833b;
+  background-color: #ebf7ed;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.product-preview--out-of-stock::before {
+  content: "Нет в наличии";
+  position: absolute;
+  top: 295px;
+  left: 0;
+  font-size: 14px;
+  line-height: 1;
+  color: #19191d;
+}
+
+.product-preview--out-of-stock .product-preview__price-container {
+  display: none;
+}
+
+.product-preview__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.product-preview__link {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-preview__link:hover {
+  opacity: 0.7;
+}
+
+.product-preview__link:active {
+  opacity: 0.5;
+}
+
+.product-preview__img {
+  order: -1;
+}
+
+.product-preview__info {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #787885;
+}
+
+.product-preview__price-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.product-preview__price {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.product-preview__old-price {
+  position: relative;
+  font-size: 16px;
+  line-height: 1;
+  color: #787885;
+  text-decoration: none;
+}
+
+.product-preview__old-price::before {
+  position: absolute;
+  content: "";
+  border-top: 1px solid #19191d;
+  left: 0;
+  right: 0;
+  transform: rotate(-10deg);
+  transform-origin: right;
+}
+
+.product-preview__rating-container {
+  display: flex;
+  align-items: center;
+}
+
+.product-preview__reviews {
+  margin: 0;
+  margin-left: 24px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #19191d;
+  white-space: nowrap;
+}
+
+.product-preview__reviews--disabled {
+  margin-left: 10px;
+  color: #787885;
+}
+
+.product-preview__reviews:not(.product-preview__reviews--disabled):hover {
+  opacity: 0.7;
+}
+
+.product-preview__reviews:not(.product-preview__reviews--disabled):active {
+  opacity: 0.5;
+}
+
+.product-preview__controls {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: auto;
+}
+
+.product-preview--short .product-preview__price {
+  margin-bottom: 4px;
+}

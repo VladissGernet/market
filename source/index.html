@@ -3,14 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Интернет-магазин электроники Market. Главная страница</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="css/style.css" as="style" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <title>Каталог</title>
 </head>
 <body class="page">
 <header class="page__header page-header">
   <nav class="page-header__navigation main-navigation">
-   <a class="logo" href="#">
-     <img class="logo__image" src="img/" width="" height="" alt=".">
-   </a>
+    <a class="logo" href="index.html">
+      <img class="logo__img" src="img/logo.svg" width="60" height="52" alt="Логотип компании">
+    </a>
     <ul class="site-navigation">
       <li class="site-navigation__item">
         <a class="site-navigation__link site-navigation__link--active" href="#">Электроника</a>
@@ -33,32 +53,44 @@
     </ul>
     <ul class="user-navigation">
       <li class="user-navigation__item user-navigation-item">
-        <a class="user-navigation-item__link profile-link" href="#">
-          <span class="profile-link__caption">Валерия</span>
+        <a class="user-navigation-item__link" href="#">
+          <svg class="user-navigation-item__img" width="18" height="20">
+            <use xlink:href="img/stack.svg#user"></use>
+          </svg>
+          <span class="user-navigation-item__caption">Валерия</span>
         </a>
       </li>
-      <li class="user-navigation__item">
-        <a class="user-navigation-item__link profile-link" href="#">
-          <span class="user-navigation__caption">Сравнение</span>
-          <span class="user-navigation__value">3</span>
+      <li class="user-navigation__item user-navigation-item">
+        <a class="user-navigation-item__link" href="#">
+          <svg class="user-navigation-item__img" width="17" height="20">
+            <use xlink:href="img/stack.svg#compare"></use>
+          </svg>
+          <span class="user-navigation-item__caption">Сравнение</span>
+          <span class="user-navigation-item__notification notification-badge">3</span>
         </a>
       </li>
-      <li class="user-navigation__item">
-        <a class="user-navigation-item__link profile-link" href="#">
-          <span class="profile-link__caption">Избранное</span>
-          <span class="profile-link__value">4</span>
+      <li class="user-navigation__item user-navigation-item">
+        <a class="user-navigation-item__link" href="#">
+          <svg class="user-navigation-item__img" width="23" height="20">
+            <use xlink:href="img/stack.svg#favorite"></use>
+          </svg>
+          <span class="user-navigation-item__caption">Избранное</span>
+          <span class="user-navigation-item__notification notification-badge">4</span>
         </a>
       </li>
-      <li class="user-navigation__item">
-        <a class="user-navigation-item__link profile-link" href="#">
-          <span class="profile-link__caption">Корзина</span>
-          <span class="profile-link__value">2</span>
+      <li class="user-navigation__item user-navigation-item">
+        <a class="user-navigation-item__link" href="#">
+          <svg class="user-navigation-item__img" width="24" height="23">
+            <use xlink:href="img/stack.svg#cart"></use>
+          </svg>
+          <span class="user-navigation-item__caption">Корзина</span>
+          <span class="user-navigation-item__notification notification-badge">2</span>
         </a>
       </li>
     </ul>
   </nav>
 </header>
-<main class="page__content">
+<main class="page__content container">
   <ul class="breadcrumbs">
     <li class="breadcrumbs__item">
       <a class="breadcrumbs__link" href="#">Главная</a>
@@ -70,769 +102,902 @@
       <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Все товары</a>
     </li>
   </ul>
-  <section class="products-section">
-    <h1 class="products-section__title">Электроника</h1>
-    <div class="products-section__params">
-      <p class="products-section__params-title">
-        Сортировать:
-      </p>
-      <ul class="sort-params">
-        <li class="sort-params__item">
-          <a class="sort-params__value" href="#">По популярности</a>
-        </li>
-        <li class="sort-params__item">
-          <a class="sort-params__value sort-params__value--desc" href="#">По цене</a>
-        </li>
-        <li class="sort-params__item">
-          <a class="sort-params__value" href="#">По рейтингу</a>
-        </li>
-        <li class="sort-params__item">
-          <a class="sort-params__value" href="#">По отзывам</a>
-        </li>
-        <li class="sort-params__item">
-          <a class="sort-params__value" href="#">По новизне</a>
-        </li>
-      </ul>
-    </div>
-    <ul class="products-section__list products catalog">
+  <section class="page-section">
+    <h1 class="page-section__title">Электроника</h1>
+    <ul class="page-section__list catalog">
       <li class="catalog__item">
         <section class="product-preview product-preview--discount" data-value="20">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Ноутбук ASUS ZenBook Duo 14 UX482EG-HY010T</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Ноутбук ASUS ZenBook Duo 14 UX482EG-HY010T.">
-          <p class="product__price">
-            144 000 ₽
-          </p>
-          <p class="product-preview__old-price">
-            172 800 ₽
-          </p>
-          <div class="product__rating rating" aria-label="Рейтинг 4 из 5">
-            <span class="rating__value">4</span>
+          <a class="product-preview__link" href="card.html">
+            <h2 class="product-preview__title">Ноутбук ASUS ZenBook Duo 14 UX482EG-HY010T</h2>
+            <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
+                 alt="Ноутбук ASUS ZenBook Duo 14 UX482EG-HY010T">
+          </a>
+          <div class="product-preview__price-container">
+            <p class="product-preview__price">144 000 ₽</p>
+            <s class="product-preview__old-price">172 800 ₽</s>
           </div>
-          <a class="product__reviews-link" href="#">132 отзыва</a>
-          <p class="product-preview__info">Бесплатная доставка по России 2 года гарантии</p>
+          <div class="product-preview__rating-container">
+            <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-empty"></use>
+              </svg>
+              <span class="rating__value">4</span>
+            </div>
+            <a class="product-preview__reviews" href="#">132 отзыва</a>
+          </div>
+          <p class="product-preview__info">Бесплатная доставка по России<br>2 года гарантии</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image button-image--active" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
       <li class="catalog__item">
         <section class="product-preview product-preview--hit">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Смартфон Huawei Mate Xs Interstellar Blue (TAH-N29M)</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Смартфон Huawei Mate Xs Interstellar Blue (TAH-N29M).">
-          <p class="product__price">
-            85 000 ₽
-          </p>
-          <div class="product__rating rating" aria-label="Рейтинг 4 из 5">
-            <span class="rating__value">4</span>
+          <a class="product-preview__link" href="card.html">
+            <h2 class="product-preview__title">Смартфон Huawei Mate Xs Interstellar Blue (TAH-N29M)</h2>
+            <img class="product-preview__img" src="img/photo-14.png" width="280" height="300"
+                 alt="Смартфон Huawei Mate Xs Interstellar Blue (TAH-N29M)">
+          </a>
+          <div class="product-preview__price-container">
+            <p class="product-preview__price">85 000 ₽</p>
           </div>
-          <a class="product__reviews-link" href="#">12 отзывов</a>
-          <p class="product-preview__info">Доставка по всему миру 1 год гарантии</p>
+          <div class="product-preview__rating-container">
+            <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-empty"></use>
+              </svg>
+              <span class="rating__value">4</span>
+            </div>
+            <a class="product-preview__reviews" href="#">12 отзывов</a>
+          </div>
+          <p class="product-preview__info">Доставка по всему миру<br>1 год гарантии</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
       <li class="catalog__item">
-        <section class="product-preview product-preview--installment" data-value="0-0-24">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Моноблок Apple iMac 24 M1/8/256 Purple (MGPM3RU/A)</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Моноблок Apple iMac 24 M1/8/256 Purple (MGPM3RU/A).">
-          <p class="product__price">
-            149 000 ₽
-          </p>
-          <div class="product__rating rating" aria-label="Рейтинг 5 из 5">
-            <span class="rating__value">5</span>
+        <section class="product-preview product-preview--instalment" data-value="0-0-24">
+          <a class="product-preview__link" href="card.html">
+            <h2 class="product-preview__title">Моноблок Apple iMac 24 M1/8/256 Purple (MGPM3RU/A)</h2>
+            <img class="product-preview__img" src="img/photo-13.png" width="280" height="300"
+                 alt="Моноблок Apple iMac 24 M1/8/256 Purple (MGPM3RU/A)">
+          </a>
+          <div class="product-preview__price-container">
+            <p class="product-preview__price">149 000 ₽</p>
           </div>
-          <a class="product__reviews-link" href="#">24 отзыва</a>
-          <p class="product-preview__info">Бесплатная доставка Расширенная гарантия AppleCare</p>
+          <div class="product-preview__rating-container">
+            <div class="product-preview__rating rating" aria-label="Рейтинг 5 из 5">
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <span class="rating__value">5</span>
+            </div>
+            <a class="product-preview__reviews" href="#">24 отзыва</a>
+          </div>
+          <p class="product-preview__info">Бесплатная доставка<br>Расширенная гарантия AppleCare</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image button-image--active" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
-          </div>
-        </section>
-      </li>
-      <li class="catalog__item">
-        <section class="product-preview">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">LED Телевизор Full HD LG 43LP50006LA</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="LED Телевизор Full HD LG 43LP50006LA.">
-          <p class="product__price">
-            45 990 ₽
-          </p>
-          <div class="product__rating rating" aria-label="Рейтинг 4 из 5">
-            <span class="rating__value">4</span>
-          </div>
-          <a class="product__reviews-link" href="#">26 отзывов</a>
-          <p class="product-preview__info">Бесплатная доставка 3 года бесплатного обслуживания</p>
-          <div class="product-preview__controls">
-            <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
-              <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
-              <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
-          </div>
-        </section>
-      </li>
-      <li class="catalog__item">
-        <section class="product-preview">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">OLED телевизор 4K Ultra HD Sony KD-55AG9</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="OLED телевизор 4K Ultra HD Sony KD-55AG9.">
-          <p class="product__price">
-            178 000 ₽
-          </p>
-          <div class="product__rating rating" aria-label="Нет отзывов"></div>
-          <a class="product__reviews-link" href="#">Нет отзывов</a>
-          <p class="product-preview__info">Доставка по всему миру 1 год гарантии</p>
-          <div class="product-preview__controls">
-            <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
-              <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
-              <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
       <li class="catalog__item">
         <section class="product-preview">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Смарт-часы Apple Watch Series 5 38mm (MTEY2RU/A)</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Смарт-часы Apple Watch Series 5 38mm (MTEY2RU/A).">
-          <p class="product__price">
-            34 000 ₽
-          </p>
-          <div class="product__rating rating" aria-label="Рейтинг 4 из 5">
-            <span class="rating__value">4</span>
+          <a class="product-preview__link" href="card.html">
+            <h2 class="product-preview__title">LED Телевизор Full HD LG 43LP50006LA</h2>
+            <img class="product-preview__img" src="img/photo-12.png" width="280" height="300"
+                 alt="LED Телевизор Full HD LG 43LP50006LA">
+          </a>
+          <div class="product-preview__price-container">
+            <p class="product-preview__price">45 990 ₽</p>
           </div>
-          <a class="product__reviews-link" href="#">7 отзывов</a>
-          <p class="product-preview__info">Бесплатная доставка по России 1 год гарантии</p>
+          <div class="product-preview__rating-container">
+            <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-empty"></use>
+              </svg>
+              <span class="rating__value">4</span>
+            </div>
+            <a class="product-preview__reviews" href="#">26 отзывов</a>
+          </div>
+          <p class="product-preview__info">Бесплатная доставка<br>3 года бесплатного обслуживания</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
       <li class="catalog__item">
         <section class="product-preview">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Смарт-часы Apple Watch SE 40mm White (MYDM2RU/A)</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Смарт-часы Apple Watch SE 40mm White (MYDM2RU/A).">
-          <p class="product__price">
-            25 000 ₽
-          </p>
-          <div class="product__rating rating" aria-label="Рейтинг 5 из 5">
-            <span class="rating__value">5</span>
+          <a class="product-preview__link" href="card.html">
+            <h2 class="product-preview__title">OLED телевизор 4K Ultra HD Sony KD-55AG9</h2>
+            <img class="product-preview__img" src="img/photo-11.png" width="280" height="300"
+                 alt="OLED телевизор 4K Ultra HD Sony KD-55AG9">
+          </a>
+          <div class="product-preview__price-container">
+            <p class="product-preview__price">178 000 ₽</p>
           </div>
-          <a class="product__reviews-link" href="#">42 отзыва</a>
-          <p class="product-preview__info">Бесплатная доставка Расширенная гарантия AppleCare</p>
+          <div class="product-preview__rating-container">
+            <div class="product-preview__rating rating rating--disabled" aria-label="Рейтинг отсутствует">
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-empty"></use>
+              </svg>
+            </div>
+            <a class="product-preview__reviews product-preview__reviews--disabled">Нет отзывов</a>
+          </div>
+          <p class="product-preview__info">Доставка по всему миру<br>1 год гарантии</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
       <li class="catalog__item">
-        <section class="product-preview product-preview--installment" data-value="0-0-24">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Моноблок Apple iMac 24 M1/8/256 Yellow (MGPM3RU/A)</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Моноблок Apple iMac 24 M1/8/256 Yellow (MGPM3RU/A).">
-          <p class="product__price">
-            149 000 ₽
-          </p>
-          <div class="product__rating rating" aria-label="Рейтинг 5 из 5">
-            <span class="rating__value">5</span>
+        <section class="product-preview">
+          <a class="product-preview__link" href="card.html">
+            <h2 class="product-preview__title">Смарт-часы Apple Watch Series 5 38mm (MTEY2RU/A)</h2>
+            <img class="product-preview__img" src="img/photo-10.png" width="280" height="300"
+                 alt="Смарт-часы Apple Watch Series 5 38mm (MTEY2RU/A)">
+          </a>
+          <div class="product-preview__price-container">
+            <p class="product-preview__price">34 000 ₽</p>
           </div>
-          <a class="product__reviews-link" href="#">12 отзывов</a>
-          <p class="product-preview__info">Бесплатная доставка Расширенная гарантия AppleCare</p>
+          <div class="product-preview__rating-container">
+            <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-empty"></use>
+              </svg>
+              <span class="rating__value">4</span>
+            </div>
+            <a class="product-preview__reviews" href="#">7 отзывов</a>
+          </div>
+          <p class="product-preview__info">Бесплатная доставка по России<br>1 год гарантии</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
+          </div>
+        </section>
+      </li>
+      <li class="catalog__item">
+        <section class="product-preview">
+          <a class="product-preview__link" href="card.html">
+            <h2 class="product-preview__title">Смарт-часы Apple Watch SE 40mm White (MYDM2RU/A)</h2>
+            <img class="product-preview__img" src="img/photo-9.png" width="280" height="300"
+                 alt="Смарт-часы Apple Watch SE 40mm White (MYDM2RU/A)">
+          </a>
+          <div class="product-preview__price-container">
+            <p class="product-preview__price">25 000 ₽</p>
+          </div>
+          <div class="product-preview__rating-container">
+            <div class="product-preview__rating rating" aria-label="Рейтинг 5 из 5">
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <span class="rating__value">5</span>
+            </div>
+            <a class="product-preview__reviews" href="#">42 отзыва</a>
+          </div>
+          <p class="product-preview__info">Бесплатная доставка<br>Расширенная гарантия AppleCare</p>
+          <div class="product-preview__controls">
+            <button class="product-preview__button button" type="button">В корзину</button>
+            <button class="product-preview__button button-image" type="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image" type="button">
+              <span class="visually-hidden">Добавить в сравнение</span>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
+          </div>
+        </section>
+      </li>
+      <li class="catalog__item">
+        <section class="product-preview product-preview--instalment" data-value="0-0-24">
+          <a class="product-preview__link" href="card.html">
+            <h2 class="product-preview__title">Моноблок Apple iMac 24 M1/8/256 Yellow (MGPM3RU/A)</h2>
+            <img class="product-preview__img" src="img/photo-8.png" width="280" height="300"
+                 alt="Моноблок Apple iMac 24 M1/8/256 Yellow (MGPM3RU/A)">
+          </a>
+          <div class="product-preview__price-container">
+            <p class="product-preview__price">149 000 ₽</p>
+          </div>
+          <div class="product-preview__rating-container">
+            <div class="product-preview__rating rating" aria-label="Рейтинг 5 из 5">
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <span class="rating__value">5</span>
+            </div>
+            <a class="product-preview__reviews" href="#">12 отзывов</a>
+          </div>
+          <p class="product-preview__info">Бесплатная доставка<br>Расширенная гарантия AppleCare</p>
+          <div class="product-preview__controls">
+            <button class="product-preview__button button" type="button">В корзину</button>
+            <button class="product-preview__button button-image button-image--active" type="button">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image" type="button">
+              <span class="visually-hidden">Добавить в сравнение</span>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
       <li class="catalog__item">
         <section class="product-preview product-preview--hit">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Смарт браслет Samsung Galaxy Fit 2 White (SM-R220NZKACIS)</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Смарт браслет Samsung Galaxy Fit 2 White (SM-R220NZKACIS).">
-          <p class="product__price">
-            2 800 ₽
-          </p>
-          <div class="product__rating rating" aria-label="Рейтинг 4 из 5">
-            <span class="rating__value">4</span>
+          <a class="product-preview__link" href="card.html">
+            <h2 class="product-preview__title">Смарт браслет Samsung Galaxy Fit 2 White (SM-R220NZKACIS)</h2>
+            <img class="product-preview__img" src="img/photo-7.png" width="280" height="300"
+                 alt="Смарт браслет Samsung Galaxy Fit 2 White (SM-R220NZKACIS)">
+          </a>
+          <div class="product-preview__price-container">
+            <p class="product-preview__price">2 800 ₽</p>
           </div>
-          <a class="product__reviews-link" href="#">164 отзыва</a>
+          <div class="product-preview__rating-container">
+            <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-empty"></use>
+              </svg>
+              <span class="rating__value">4</span>
+            </div>
+            <a class="product-preview__reviews" href="#">164 отзыва</a>
+          </div>
           <p class="product-preview__info">Бесплатная доставка</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image button-image--active" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
       <li class="catalog__item">
         <section class="product-preview">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Планшет Apple iPad Pro 11 (2020) 128 GB Space Grey (MY2V2RU/A)</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Планшет Apple iPad Pro 11 (2020) 128 GB Space Grey (MY2V2RU/A).">
-          <p class="product__price">
-            72 000 ₽
-          </p>
-          <div class="product__rating rating" aria-label="Рейтинг 4 из 5">
-            <span class="rating__value">4</span>
+          <a class="product-preview__link" href="card.html">
+            <h2 class="product-preview__title">Планшет Apple iPad Pro 11 (2020) 128 GB Space Grey (MY2V2RU/A)</h2>
+            <img class="product-preview__img" src="img/photo-6.png" width="280" height="300"
+                 alt="Планшет Apple iPad Pro 11 (2020) 128 GB Space Grey (MY2V2RU/A)">
+          </a>
+          <div class="product-preview__price-container">
+            <p class="product-preview__price">72 000 ₽</p>
           </div>
-          <a class="product__reviews-link" href="#">22 отзыва</a>
+          <div class="product-preview__rating-container">
+            <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-empty"></use>
+              </svg>
+              <span class="rating__value">4</span>
+            </div>
+            <a class="product-preview__reviews" href="#">22 отзыва</a>
+          </div>
           <p class="product-preview__info">Бесплатная доставка</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image button-image--active" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
       <li class="catalog__item">
-        <section class="product-preview product-preview--discount" data-value="30">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Беспроводные наушники Apple AirPods 2 White (MRXJ2RU/A)</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Беспроводные наушники Apple AirPods 2 White (MRXJ2RU/A).">
-          <p class="product__price">
-            11 000 ₽
-          </p>
-          <p class="product-preview__old-price">
-            14 300 ₽
-          </p>
-          <div class="product__rating rating" aria-label="Рейтинг 4 из 5">
-            <span class="rating__value">4</span>
+        <section class="product-preview product-preview--discount" data-value="20">
+          <a class="product-preview__link" href="card.html">
+            <h2 class="product-preview__title">Беспроводные наушники Apple AirPods 2 White (MRXJ2RU/A)</h2>
+            <img class="product-preview__img" src="img/photo-5.png" width="280" height="300"
+                 alt="Беспроводные наушники Apple AirPods 2 White (MRXJ2RU/A)">
+          </a>
+          <div class="product-preview__price-container">
+            <p class="product-preview__price">11 000 ₽</p>
+            <s class="product-preview__old-price">14 300 ₽</s>
           </div>
-          <a class="product__reviews-link" href="#">18 отзывов</a>
+          <div class="product-preview__rating-container">
+            <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-empty"></use>
+              </svg>
+              <span class="rating__value">4</span>
+            </div>
+            <a class="product-preview__reviews" href="#">18 отзывов</a>
+          </div>
           <p class="product-preview__info">Бесплатная доставка по России</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image button-image--active" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
       <li class="catalog__item">
         <section class="product-preview">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Смартфон Samsung Galaxy S20 Ultra 12/128GB (SM-G988BZADSER)</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Смартфон Samsung Galaxy S20 Ultra 12/128GB (SM-G988BZADSER).">
-          <p class="product__price">
-            95 000 ₽
-          </p>
-          <div class="product__rating rating" aria-label="Рейтинг 4 из 5">
-            <span class="rating__value">4</span>
+          <a class="product-preview__link" href="card.html">
+            <h2 class="product-preview__title">Смартфон Samsung Galaxy S20 Ultra 12/128GB (SM-G988BZADSER)</h2>
+            <img class="product-preview__img" src="img/photo-4.png" width="280" height="300"
+                 alt="Смартфон Samsung Galaxy S20 Ultra 12/128GB (SM-G988BZADSER)">
+          </a>
+          <div class="product-preview__price-container">
+            <p class="product-preview__price">95 000 ₽</p>
           </div>
-          <a class="product__reviews-link" href="#">5 отзывов</a>
+          <div class="product-preview__rating-container">
+            <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-empty"></use>
+              </svg>
+              <span class="rating__value">4</span>
+            </div>
+            <a class="product-preview__reviews" href="#">5 отзывов</a>
+          </div>
           <p class="product-preview__info">Доставка по всему миру</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image button-image--active" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
       <li class="catalog__item">
-        <section class="product-preview">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link product-preview__link--disabled" href="#">Планшет Apple iPad Air (2020)
-              256GB White (MYFT2RU/A)</a>
-          </h2>
-          <p class="product-preview__out-of-stock">
-            Нет в наличии
-          </p>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Планшет Apple iPad Air (2020) 256GB White (MYFT2RU/A).">
-          <div class="product__rating rating" aria-label="Рейтинг 5 из 5">
-            <span class="rating__value">5</span>
+        <section class="product-preview product-preview--out-of-stock">
+          <a class="product-preview__link" href="card.html">
+            <h2 class="product-preview__title">Планшет Apple iPad Air (2020) 256GB White (MYFT2RU/A)</h2>
+            <img class="product-preview__img" src="img/photo-3.png" width="280" height="300"
+                 alt="Планшет Apple iPad Air (2020) 256GB White (MYFT2RU/A)">
+          </a>
+          <div class="product-preview__price-container">
+            <p class="product-preview__price">69 000 ₽</p>
           </div>
-          <a class="product__reviews-link" href="#">14 отзывов</a>
-          <p class="product-preview__info">Бесплатная доставка Расширенная гарантия AppleCare</p>
+          <div class="product-preview__rating-container">
+            <div class="product-preview__rating rating" aria-label="Рейтинг 5 из 5">
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <span class="rating__value">5</span>
+            </div>
+            <a class="product-preview__reviews" href="#">14 отзывов</a>
+          </div>
+          <p class="product-preview__info">Бесплатная доставка<br>Расширенная гарантия AppleCare</p>
           <div class="product-preview__controls">
-            <button class="product-preview__button button button--disabled" type="button" disabled>В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button button--disabled" type="button">В корзину</button>
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image button-image--active" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
       <li class="catalog__item">
-        <section class="product-preview product-preview--installment" data-value="0-0-24">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Ноутбук Apple MacBook Pro 16 TB i9 2.3/16GB/1024GB SSD</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Ноутбук Apple MacBook Pro 16 TB i9 2.3/16GB/1024GB SSD.">
-          <p class="product__price">
-            239 000 ₽
-          </p>
-          <div class="product__rating rating" aria-label="Рейтинг 4 из 5">
-            <span class="rating__value">4</span>
+        <section class="product-preview product-preview--instalment" data-value="0-0-24">
+          <a class="product-preview__link" href="card.html">
+            <h2 class="product-preview__title">Ноутбук Apple MacBook Pro 16 TB i9 2.3/16GB/1024GB SSD</h2>
+            <img class="product-preview__img" src="img/photo-2.png" width="280" height="300"
+                 alt="Ноутбук Apple MacBook Pro 16 TB i9 2.3/16GB/1024GB SSD">
+          </a>
+          <div class="product-preview__price-container">
+            <p class="product-preview__price">239 000 ₽</p>
           </div>
-          <a class="product__reviews-link" href="#">32 отзыва</a>
-          <p class="product-preview__info">Бесплатная доставка по России 2 года гарантии</p>
+          <div class="product-preview__rating-container">
+            <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-empty"></use>
+              </svg>
+              <span class="rating__value">4</span>
+            </div>
+            <a class="product-preview__reviews" href="#">32 отзыва</a>
+          </div>
+          <p class="product-preview__info">Бесплатная доставка<br>2 года гарантии</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image button-image--active" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image button-image--active" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
       <li class="catalog__item">
         <section class="product-preview">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Смартфон Apple iPhone 12 Pro 128GB Pacific Blue (MGMN3RU/A)</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Смартфон Apple iPhone 12 Pro 128GB Pacific Blue (MGMN3RU/A).">
-          <p class="product__price">
-            95 000 ₽
-          </p>
-          <div class="product__rating rating" aria-label="Рейтинг 4 из 5">
-            <span class="rating__value">4</span>
+          <a class="product-preview__link" href="card.html">
+            <h2 class="product-preview__title">Смартфон Apple iPhone 12 Pro 128GB Pacific Blue (MGMN3RU/A)</h2>
+            <img class="product-preview__img" src="img/photo-1.png" width="280" height="300"
+                 alt="Смартфон Apple iPhone 12 Pro 128GB Pacific Blue (MGMN3RU/A)">
+          </a>
+          <div class="product-preview__price-container">
+            <p class="product-preview__price">95 000 ₽</p>
           </div>
-          <a class="product__reviews-link" href="#">5 отзывов</a>
+          <div class="product-preview__rating-container">
+            <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-active"></use>
+              </svg>
+              <svg class="rating__star">
+                <use xlink:href="img/stack.svg#rating-star-empty"></use>
+              </svg>
+              <span class="rating__value">4</span>
+            </div>
+            <a class="product-preview__reviews" href="#">5 отзывов</a>
+          </div>
           <p class="product-preview__info">Бесплатная доставка</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
     </ul>
-    <section class="products-section__filters filters">
-      <h2 class="filters__title">Фильтры</h2>
-      <form class="filters__form filters-form" action="#" method="GET">
-        <button class="filters-form__reset" type="reset">Очистить</button>
-        <input class="filters-form__search input input--search" type="text" placeholder="Поиск по фильтрам"
-               name="filters" id="filters">
-        <fieldset class="filters-form__fieldset">
-          <legend class="filters-form__fieldset-caption">Цена</legend>
-          <div class="filter-range">
-            <div class="filter-range__input-interval">
-              <label class="visually-hidden" for="filters-form-price-min">От</label>
-              <input class="filter-range__input input" type="text" name="filters-form-price-min"
-                     id="filters-form-price-min" value="от 3 290">
-              <label class="visually-hidden" for="filters-form-price-max">До</label>
-              <input class="filter-range__input input" type="text" name="filters-form-price-max"
-                     id="filters-form-price-max" value="до 250 000">
-            </div>
-            <div class="filter-range__controls">
-              <div class="filter-range__rail">
-                <div class="filter-range__track"></div>
-              </div>
-              <button class="filter-range__handle filter-range__handle-min">
-                <span class="visually-hidden">Установить минимальную стоимость</span>
-              </button>
-              <button class="filter-range__handle filter-range__handle-max">
-                <span class="visually-hidden">Установить максимальную стоимость</span>
-              </button>
-            </div>
-          </div>
-        </fieldset>
-        <fieldset class="filters-form__fieldset">
-          <legend class="filters-form__fieldset-caption">Бренд</legend>
-          <input class="filters-form__search input input--search" type="text" placeholder="Поиск"
-                 name="brand-search" id="brand-search">
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="brand" value="asus" checked>
-            <span class="checkbox__label">Asus</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="brand" value="acer">
-            <span class="checkbox__label">Acer</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="brand" value="apple" checked>
-            <span class="checkbox__label">Apple</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="brand" value="samsung">
-            <span class="checkbox__label">Samsung</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="brand" value="xiaomi">
-            <span class="checkbox__label">Xiaomi</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="brand" value="lenovo">
-            <span class="checkbox__label">Lenovo</span>
-          </label>
-          <label class="filters-form__option checkbox checkbox--disabled">
-            <input class="visually-hidden" type="checkbox" name="brand" value="hp" disabled>
-            <span class="checkbox__label">HP</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="brand" value="huawei">
-            <span class="checkbox__label">Huawei</span>
-          </label>
-          <label class="filters-form__option checkbox checkbox--disabled">
-            <input class="visually-hidden" type="checkbox" name="brand" value="dell" disabled>
-            <span class="checkbox__label">Dell</span>
-          </label>
-          <a class="filters-form__link" href="#">Смотреть все</a>
-        </fieldset>
-        <fieldset class="filters-form__fieldset">
-          <legend class="filters-form__fieldset-caption">Способ доставки</legend>
-          <label class="filters-form__option radiobutton">
-            <input class="visually-hidden" type="radio" name="delivery" value="courier">
-            <span class="radiobutton__label">Доставка курьером</span>
-          </label>
-          <label class="filters-form__option radiobutton">
-            <input class="visually-hidden" type="radio" name="delivery" value="pick-up">
-            <span class="radiobutton__label">Самовывоз</span>
-          </label>
-          <label class="filters-form__option radiobutton radiobutton--disabled">
-            <input class="visually-hidden" type="radio" name="delivery" value="postamat" disabled>
-            <span class="radiobutton__label">Постамат</span>
-          </label>
-          <label class="filters-form__option radiobutton">
-            <input class="visually-hidden" type="radio" name="delivery" value="delivery-any" checked>
-            <span class="radiobutton__label">Любой</span>
-          </label>
-        </fieldset>
-        <fieldset class="filters-form__fieldset">
-          <legend class="visually-hidden">Дополнительные параметры</legend>
-          <label class="filters-form__item toggle">
-            <span class="toggle__label">Товары со скидкой</span>
-            <input class="visually-hidden" type="checkbox"  name="discount" id="discount">
-            <span class="toggle__slider"></span>
-          </label>
-          <label class="filters-form__item toggle">
-            <span class="toggle__label">Доступно в рассрочку</span>
-            <input class="visually-hidden" type="checkbox" name="byinstallments" id="byinstallments" checked>
-            <span class="toggle__slider"></span>
-          </label>
-        </fieldset>
-        <fieldset class="filters-form__fieldset">
-          <legend class="filters-form__fieldset-caption">Наличие в магазине</legend>
-          <input class="filters-form__search input input--search" type="text" placeholder="Адрес, метро, название"
-                 name="shop" id="shop">
-        </fieldset>
-        <fieldset class="filters-form__fieldset">
-          <legend class="filters-form__fieldset-caption">Продавец</legend>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="seller" id="atech" checked>
-            <span class="checkbox__label">Atech</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="seller" id="bonnto">
-            <span class="checkbox__label">Bonnto</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="seller" id="cesar" checked>
-            <span class="checkbox__label">Cesar</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="seller" id="dnk">
-            <span class="checkbox__label">DNK</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="seller" id="emall">
-            <span class="checkbox__label">Emall</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="seller" id="faiser">
-            <span class="checkbox__label">Faiser</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="seller" id="greal" checked>
-            <span class="checkbox__label">Greal</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="seller" id="holly-land" checked>
-            <span class="checkbox__label">Holly Land</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="seller" id="market" checked>
-            <span class="checkbox__label">Market</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="seller" id="hiplace">
-            <span class="checkbox__label">Hiplace</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="seller" id="honey-moon">
-            <span class="checkbox__label">Honey Moon</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="seller" id="realplace">
-            <span class="checkbox__label">Realplace</span>
-          </label>
-          <label class="filters-form__option checkbox">
-            <input class="visually-hidden" type="checkbox" name="seller" id="reshop">
-            <span class="checkbox__label">Reshop</span>
-          </label>
-          <a class="filters-form__link" href="#">Скрыть</a>
-        </fieldset>
-        <fieldset class="filters-form__fieldset">
-          <legend class="filters-form__fieldset-caption">Рейтинг</legend>
-          <label class="filters-form__option radiobutton">
-            <input class="visually-hidden" type="radio" name="rating" value="3">
-            <span class="radiobutton__label">От
-                  <span class="filters-form__rate rating rating--size-medium" aria-label="Рейтинг 3 из 5">
-                  </span>
-                </span>
-          </label>
-          <label class="filters-form__option radiobutton">
-            <input class="visually-hidden" type="radio" name="rating" value="4">
-            <span class="radiobutton__label">От
-                  <span class="filters-form__rate rating rating--size-medium" aria-label="Рейтинг 4 из 5">
-                  </span>
-                </span>
-          </label>
-          <label class="filters-form__option radiobutton">
-            <input class="visually-hidden" type="radio" name="rating" id="rating-any" checked>
-            <span class="radiobutton__label">Любой</span>
-          </label>
-        </fieldset>
-        <button class="filters-form__button button button--additional" type="button">Все фильтры</button>
-      </form>
-    </section>
-    <ul class="catalog__pagination pagination">
+    <ul class="pagination">
       <li class="pagination__item">
-        <a class="pagination__link pagination__link--disabled" href="#">
+        <a class="pagination__link pagination__link--prev pagination__link--disabled" href="#">
           <span class="visually-hidden">Назад</span>
+          <svg class="pagination__link-img">
+            <use xlink:href="img/stack.svg#left"></use>
+          </svg>
         </a>
       </li>
       <li class="pagination__item">
-        <a class="pagination__link pagination__link--active" href="#">
-          1
-        </a>
+        <a class="pagination__link pagination__link--active" href="#">1</a>
       </li>
       <li class="pagination__item">
-        <a class="pagination__link" href="#">
-          2
-        </a>
+        <a class="pagination__link" href="#">2</a>
       </li>
       <li class="pagination__item">
-        <a class="pagination__link" href="#">
-          3
-        </a>
+        <a class="pagination__link" href="#">3</a>
       </li>
       <li class="pagination__item">
-        <a class="pagination__link" href="#">
-          4
-        </a>
+        <a class="pagination__link" href="#">4</a>
       </li>
       <li class="pagination__item">
-        <a class="pagination__link" href="#">
-          5
-        </a>
+        <a class="pagination__link" href="#">5</a>
       </li>
       <li class="pagination__item">
-        <a class="pagination__link" href="#">
-          6
-        </a>
+        <a class="pagination__link" href="#">6</a>
       </li>
       <li class="pagination__item">
-        <a class="pagination__link" href="#">
-          7
-        </a>
+        <a class="pagination__link" href="#">7</a>
       </li>
       <li class="pagination__item">
-        <a class="pagination__link" href="#">
-          <span class="visually-hidden">Вперед</span>
+        <a class="pagination__link" href="#">8</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link pagination__link--next" href="#">
+          <span class="visually-hidden">Вперёд</span>
+          <svg class="pagination__link-img">
+            <use xlink:href="img/stack.svg#right"></use>
+          </svg>
         </a>
       </li>
     </ul>
   </section>
-  <section class="products-short-list-section">
-    <h2 class="products-short-list-section__title">Вы недавно смотрели</h2>
-    <ul class="products-short-list-section__list products catalog">
+  <section class="page-section">
+    <h2 class="page-section__title">Вы недавно смотрели</h2>
+    <ul class="page-section__list catalog">
       <li class="catalog__item">
         <section class="product-preview product-preview--short">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Смарт-часы Apple Watch Series 5 38mm (MTEY2RU/A)</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Смарт-часы Apple Watch Series 5 38mm (MTEY2RU/A).">
-          <p class="product__price">
-            34 000 ₽
-          </p>
+          <a class="product-preview__link" href="card.html">
+            <h3 class="product-preview__title">Смарт-часы Apple Watch Series 5 38mm (MTEY2RU/A)</h3>
+            <img class="product-preview__img" src="img/photo-10.png" width="280" height="300"
+                 alt="Смарт-часы Apple Watch Series 5 38mm (MTEY2RU/A)">
+          </a>
+          <p class="product-preview__price">34 000 ₽</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
       <li class="catalog__item">
-        <section class="product-preview">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Планшет Apple iPad Pro 11 (2020) 128 GB Space Grey (MY2V2RU/A)</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Планшет Apple iPad Pro 11 (2020) 128 GB Space Grey (MY2V2RU/A).">
-          <p class="product__price">
-            72 000 ₽
-          </p>
+        <section class="product-preview product-preview--short">
+          <a class="product-preview__link" href="card.html">
+            <h3 class="product-preview__title">Планшет Apple iPad Pro 11 (2020) 128 GB Space Grey (MY2V2RU/A)</h3>
+            <img class="product-preview__img" src="img/photo-6.png" width="280" height="300"
+                 alt="Планшет Apple iPad Pro 11 (2020) 128 GB Space Grey (MY2V2RU/A)">
+          </a>
+          <p class="product-preview__price">72 000 ₽</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image button-image--active" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
       <li class="catalog__item">
-        <section class="product-preview product-preview--installment" data-value="0-0-24">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Ноутбук Apple MacBook Pro 16 TB i9 2.3/16GB/1024GB SSD</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Ноутбук Apple MacBook Pro 16 TB i9 2.3/16GB/1024GB SSD.">
-          <p class="product__price">
-            239 000 ₽
-          </p>
+        <section class="product-preview product-preview--short product-preview--instalment" data-value="0-0-24">
+          <a class="product-preview__link" href="card.html">
+            <h3 class="product-preview__title">Ноутбук Apple MacBook Pro 16 TB i9 2.3/16GB/1024GB SSD</h3>
+            <img class="product-preview__img" src="img/photo-2.png" width="280" height="300"
+                 alt="Ноутбук Apple MacBook Pro 16 TB i9 2.3/16GB/1024GB SSD">
+          </a>
+          <p class="product-preview__price">239 000 ₽</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image button-image--active" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image button-image--active" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
       <li class="catalog__item">
-        <section class="product-preview">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Смарт-часы Apple Watch SE 40mm White (MYDM2RU/A)</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Смарт-часы Apple Watch SE 40mm White (MYDM2RU/A).">
-          <p class="product__price">
-            25 000 ₽
-          </p>
+        <section class="product-preview product-preview--short">
+          <a class="product-preview__link" href="card.html">
+            <h3 class="product-preview__title">Смарт-часы Apple Watch SE 40mm White (MYDM2RU/A)</h3>
+            <img class="product-preview__img" src="img/photo-9.png" width="280" height="300"
+                 alt="Смарт-часы Apple Watch SE 40mm White (MYDM2RU/A)">
+          </a>
+          <p class="product-preview__price">25 000 ₽</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
       <li class="catalog__item">
-        <section class="product-preview">
-          <h2 class="product-preview__title">
-            <a class="product-preview__link" href="#">Смартфон Samsung Galaxy S20 Ultra 12/128GB (SM-G988BZADSER)</a>
-          </h2>
-          <img class="product-preview__img" src="img/photo-15.png" width="280" height="300"
-               alt="Смартфон Samsung Galaxy S20 Ultra 12/128GB (SM-G988BZADSER).">
-          <p class="product__price">
-            95 000 ₽
-          </p>
+        <section class="product-preview product-preview--short">
+          <a class="product-preview__link" href="card.html">
+            <h3 class="product-preview__title">Смартфон Samsung Galaxy S20 Ultra 12/128GB (SM-G988BZADSER)</h3>
+            <img class="product-preview__img" src="img/photo-4.png" width="280" height="300"
+                 alt="Смартфон Samsung Galaxy S20 Ultra 12/128GB (SM-G988BZADSER)">
+          </a>
+          <p class="product-preview__price">95 000 ₽</p>
           <div class="product-preview__controls">
             <button class="product-preview__button button" type="button">В корзину</button>
-            <a class="product-preview__button image-button" href="#">
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в избранное</span>
-            </a>
-            <a class="product-preview__button image-button image-button--active" href="#">
+              <svg class="button-image__img" width="21" height="18">
+                <use xlink:href="img/stack.svg#favorite"></use>
+              </svg>
+            </button>
+            <button class="product-preview__button button-image" type="button">
               <span class="visually-hidden">Добавить в сравнение</span>
-            </a>
+              <svg class="button-image__img" width="17" height="20">
+                <use xlink:href="img/stack.svg#compare"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </li>
@@ -840,71 +1005,131 @@
   </section>
 </main>
 <footer class="page__footer page-footer">
-  <div class="page-footer__column">
-    <dl class="page-footer__services column-content">
-      <dt class="column-content__title">О компании</dt>
-      <dd class="column-content__data">
-        <a class="column-content__link" href="#">О нас</a>
-      </dd>
-      <dd class="column-content__data">
-        <a class="column-content__link" href="#">Контакты</a>
-      </dd>
-      <dd class="column-content__data">
-        <a class="column-content__link" href="#">Вакансии</a>
-      </dd>
-      <dd class="column-content__data">
-        <a class="column-content__link" href="#">Реквизиты</a>
-      </dd>
-      <dd class="column-content__data">
-        <a class="column-content__link" href="#">Новости</a>
-      </dd>
-    </dl>
+  <div class="container page-footer__content">
+    <div class="page-footer__navigation service-navigation">
+      <div class="service-navigation__column">
+        <h2 class="service-navigation__category">О компании</h2>
+        <ul class="service-navigation__list">
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">О нас</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Контакты</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Вакансии</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Реквизиты</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Новости</a>
+          </li>
+        </ul>
+      </div>
+      <div class="service-navigation__column">
+        <h2 class="service-navigation__category">Покупателям</h2>
+        <ul  class="service-navigation__list">
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Служба поддержки</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Оплата и доставка</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Возврат и обмен</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Рассрочка</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Акции</a>
+          </li>
+        </ul>
+      </div>
+      <div class="service-navigation__column">
+        <h2 class="service-navigation__category">Сотрудничество</h2>
+        <ul  class="service-navigation__list">
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Продавайте на Market</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Перевозчикам</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Пункты выдачи</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Реферальная программа</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Постаматы</a>
+          </li>
+        </ul>
+      </div>
+      <div class="service-navigation__column">
+        <h2 class="service-navigation__category">Правовая информация</h2>
+        <ul  class="service-navigation__list">
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Условия использования сайта</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Политика обработки персональных данных</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Условия заказа и доставки</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-footer__payment payment">
+      <h2 class="payment__title">Способы оплаты:</h2>
+      <ul class="payment__list">
+        <li class="payment__item">
+          <img src="img/visa.svg" width="34" height="24" alt="visa">
+        </li>
+        <li class="payment__item">
+          <img src="img/mastercard.svg" width="34" height="24" alt="mastercard">
+        </li>
+        <li class="payment__item">
+          <img src="img/applepay.svg" width="34" height="24" alt="apple-pay">
+        </li>
+        <li class="payment__item">
+          <img src="img/googlepay.svg" width="34" height="24" alt="google-pay">
+        </li>
+        <li class="payment__item">
+          <img src="img/yandex.svg" width="34" height="24" alt="yandex">
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__social social">
+      <h2 class="social__title">Мы в соцсетях</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="img/twitter.svg" width="30" height="30" alt="twitter">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="img/facebook.svg" width="30" height="30" alt="facebook">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="img/vk.svg" width="30" height="30" alt="vk">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="img/instagram.svg" width="30" height="30" alt="instagram">
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="page-footer__payment payment">
-    <p class="payment__text">
-      Способы оплаты
-    </p>
-    <ul class="payment__list">
-      <li class="payment__item">
-        VISA
-      </li>
-      <li class="payment__item">
-        MasterCard
-      </li>
-      <li class="payment__item">
-        ApplePay
-      </li>
-      <li class="payment__item">
-        GooglePay
-      </li>
-      <li class="payment__item">
-        YandexPay
-      </li>
-    </ul>
-  </div>
-  <div class="page-footer__social social">
-    <p class="social__text">
-      Мы в соцсетях
-    </p>
-    <ul class="social__list">
-      <li class="social__item">
-        Twitter
-      </li>
-      <li class="social__item">
-        Facebook
-      </li>
-      <li class="social__item">
-        Вконтакте
-      </li>
-      <li class="social__item">
-        Instagram
-      </li>
-    </ul>
-  </div>
-  <div class="page-footer__row">
-    <p class="page-footer__copyright">
-      OOO «Маркет» © 2021 Все права защищены
-    </p>
+  <div class="page-footer__split">
+    <p class="page-footer__copyright">OOO «Маркет» © 2021 Все права защищены</p>
   </div>
 </footer>
 </body>

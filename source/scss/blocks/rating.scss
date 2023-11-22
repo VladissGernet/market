@@ -1,0 +1,30 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.rating__star {
+  width: 11px;
+  height: 11px;
+  fill: #5236ff;
+  stroke: #5236ff;
+  stroke-width: 0;
+}
+
+.rating--disabled .rating__star {
+  fill: #e6e6f2;
+  stroke: #e6e6f2;
+}
+
+.rating--size-medium .rating__star {
+  width: 14px;
+  height: 14px;
+}
+
+.rating__value {
+  margin-left: 7px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #787885;
+}

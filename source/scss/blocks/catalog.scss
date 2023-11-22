@@ -1,0 +1,22 @@
+.catalog {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  gap: 1px 0;
+  background-color: rgb(25, 25, 29, 0.1);
+}
+
+.catalog__item {
+  display: flex;
+  width: 280px;
+  padding-top: 40px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+}
+
+.catalog__item:nth-child(5n) {
+  padding-right: 0;
+}

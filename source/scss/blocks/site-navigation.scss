@@ -1,0 +1,34 @@
+.site-navigation {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 32px;
+}
+
+.site-navigation__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-navigation__link--active {
+  color: #5236ff;
+  text-decoration: underline 2px solid #5236ff;
+  text-underline-offset: 6px;
+  cursor: default;
+}
+
+.site-navigation__link--accent {
+  color: #ff0741;
+}
+
+.site-navigation__link:not(.site-navigation__link--active):hover {
+  opacity: 0.7;
+}
+
+.site-navigation__link:not(.site-navigation__link--active):active {
+  opacity: 0.5;
+}

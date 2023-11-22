@@ -1,0 +1,6 @@
+.main-navigation {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  align-items: center;
+  gap: 100px;
+}
