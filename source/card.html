@@ -3,13 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="css/style.css" as="style" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <title>Карточка товара</title>
 </head>
 <body class="page">
 <header class="page__header page-header">
   <nav class="page-header__navigation main-navigation">
-    <a class="logo" href="index.html">
-      <img class="logo__image" src="img/" width="" height="" alt=".">
+    <a class="main-navigation__logo logo" href="index.html">
+      <img class="logo__img" src="img/logo.svg" width="60" height="52" alt="Логотип компании">
     </a>
     <ul class="site-navigation">
       <li class="site-navigation__item">
@@ -31,28 +51,38 @@
         <a class="site-navigation__link site-navigation__link--accent" href="#">Акции</a>
       </li>
     </ul>
-    <ul class="user-navigation">
+    <ul class="main-navigation__user-navigation user-navigation">
       <li class="user-navigation__item user-navigation-item">
-        <a class="user-navigation-item__link profile-link" href="#">
-          <span class="profile-link__caption">Валерия</span>
+        <a class="user-navigation-item__link" href="#">
+          <svg class="user-navigation-item__img" width="18" height="20">
+            <use xlink:href="img/stack.svg#user"></use>
+          </svg>
+          <span class="user-navigation-item__caption">Валерия</span>
         </a>
       </li>
       <li class="user-navigation__item user-navigation-item">
-        <a class="user-navigation-item__link profile-link" href="#">
-          <span class="user-navigation__caption">Сравнение</span>
-          <span class="user-navigation__value">3</span>
+        <a class="user-navigation-item__link" href="#">
+          <svg class="user-navigation-item__img" width="17" height="20">
+            <use xlink:href="img/stack.svg#compare"></use>
+          </svg>
+          <span class="user-navigation-item__caption">Сравнение</span>
+          <span class="user-navigation-item__notification notification-badge">3</span>
         </a>
       </li>
       <li class="user-navigation__item user-navigation-item">
-        <a class="user-navigation-item__link profile-link" href="#">
-          <span class="profile-link__caption">Избранное</span>
-          <span class="profile-link__value">4</span>
+        <a class="user-navigation-item__link" href="#">
+          <svg class="user-navigation-item__img" width="23" height="20">
+            <use xlink:href="img/stack.svg#favorite"></use>
+          </svg>
+          <span class="user-navigation-item__caption">Избранное</span>
+          <span class="user-navigation-item__notification notification-badge">4</span>
         </a>
       </li>
       <li class="user-navigation__item user-navigation-item">
-        <a class="user-navigation-item__link profile-link" href="#">
-          <span class="profile-link__caption">Корзина</span>
-          <span class="profile-link__value">2</span>
+        <a class="user-navigation-item__link" href="#">
+          <svg class="user-navigation-item__img" width="24" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6m15 15a1 1 0 11-2 0 1 1 0 012 0zm-11 0a1 1 0 11-2 0 1 1 0 012 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="user-navigation-item__caption">Корзина</span>
+          <span class="user-navigation-item__notification notification-badge">2</span>
         </a>
       </li>
     </ul>
@@ -345,7 +375,7 @@
             </blockquote>
             <a class="reviews__show-more" href="#">Смотреть еще</a>
           </div>
-      </div>
+        </div>
         <div class="tabs__pages-item" id="page-3">
           <table class="product-card__shop-offers table shop-offers">
             <tr class="table__row">
@@ -505,71 +535,131 @@
   </section>
 </main>
 <footer class="page__footer page-footer">
-  <div class="page-footer__column">
-    <dl class="page-footer__services column-content">
-      <dt class="column-content__title">О компании</dt>
-      <dd class="column-content__data">
-        <a class="column-content__link" href="#">О нас</a>
-      </dd>
-      <dd class="column-content__data">
-        <a class="column-content__link" href="#">Контакты</a>
-      </dd>
-      <dd class="column-content__data">
-        <a class="column-content__link" href="#">Вакансии</a>
-      </dd>
-      <dd class="column-content__data">
-        <a class="column-content__link" href="#">Реквизиты</a>
-      </dd>
-      <dd class="column-content__data">
-        <a class="column-content__link" href="#">Новости</a>
-      </dd>
-    </dl>
+  <div class="container page-footer__content">
+    <div class="page-footer__navigation service-navigation">
+      <div class="service-navigation__column">
+        <h2 class="service-navigation__category">О компании</h2>
+        <ul class="service-navigation__list">
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">О нас</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Контакты</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Вакансии</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Реквизиты</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Новости</a>
+          </li>
+        </ul>
+      </div>
+      <div class="service-navigation__column">
+        <h2 class="service-navigation__category">Покупателям</h2>
+        <ul  class="service-navigation__list">
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Служба поддержки</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Оплата и доставка</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Возврат и обмен</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Рассрочка</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Акции</a>
+          </li>
+        </ul>
+      </div>
+      <div class="service-navigation__column">
+        <h2 class="service-navigation__category">Сотрудничество</h2>
+        <ul  class="service-navigation__list">
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Продавайте на Market</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Перевозчикам</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Пункты выдачи</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Реферальная программа</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Постаматы</a>
+          </li>
+        </ul>
+      </div>
+      <div class="service-navigation__column">
+        <h2 class="service-navigation__category">Правовая информация</h2>
+        <ul  class="service-navigation__list">
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Условия использования сайта</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Политика обработки персональных данных</a>
+          </li>
+          <li class="service-navigation__item">
+            <a class="service-navigation__link" href="#">Условия заказа и доставки</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-footer__payment payment">
+      <h2 class="payment__title">Способы оплаты:</h2>
+      <ul class="payment__list">
+        <li class="payment__item">
+          <img src="img/visa.svg" width="34" height="24" alt="visa">
+        </li>
+        <li class="payment__item">
+          <img src="img/mastercard.svg" width="34" height="24" alt="mastercard">
+        </li>
+        <li class="payment__item">
+          <img src="img/applepay.svg" width="34" height="24" alt="apple-pay">
+        </li>
+        <li class="payment__item">
+          <img src="img/googlepay.svg" width="34" height="24" alt="google-pay">
+        </li>
+        <li class="payment__item">
+          <img src="img/yandex.svg" width="34" height="24" alt="yandex">
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__social social">
+      <h2 class="social__title">Мы в соцсетях</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="img/twitter.svg" width="30" height="30" alt="twitter">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="img/facebook.svg" width="30" height="30" alt="facebook">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="img/vk.svg" width="30" height="30" alt="vk">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="img/instagram.svg" width="30" height="30" alt="instagram">
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="page-footer__payment payment">
-    <p class="payment__text">
-      Способы оплаты
-    </p>
-    <ul class="payment__list">
-      <li class="payment__item">
-        VISA
-      </li>
-      <li class="payment__item">
-        MasterCard
-      </li>
-      <li class="payment__item">
-        ApplePay
-      </li>
-      <li class="payment__item">
-        GooglePay
-      </li>
-      <li class="payment__item">
-        YandexPay
-      </li>
-    </ul>
-  </div>
-  <div class="page-footer__social social">
-    <p class="social__text">
-      Мы в соцсетях
-    </p>
-    <ul class="social__list">
-      <li class="social__item">
-        Twitter
-      </li>
-      <li class="social__item">
-        Facebook
-      </li>
-      <li class="social__item">
-        Вконтакте
-      </li>
-      <li class="social__item">
-        Instagram
-      </li>
-    </ul>
-  </div>
-  <div class="page-footer__row">
-    <p class="page-footer__copyright">
-      OOO «Маркет» © 2021 Все права защищены
-    </p>
+  <div class="page-footer__split">
+    <p class="page-footer__copyright">OOO «Маркет» © 2021 Все права защищены</p>
   </div>
 </footer>
 </body>
