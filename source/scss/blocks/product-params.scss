@@ -1,0 +1,44 @@
+.product-params__group {
+  margin-bottom: 13px;
+}
+
+.product-params__group-title {
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.product-params__list {
+  display: grid;
+  grid-template-columns: 435px 435px;
+  gap: 0 185px;
+  margin: 0;
+}
+
+.product-params__item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.product-params__item-name {
+  display: flex;
+  align-items: end;
+  color: #787885;
+}
+
+.product-params__item-name::after {
+  content: "Заполнитель";
+  border-bottom: 1px dashed rgb(25, 25, 29, 0.1);
+  height: 1px;
+  flex-grow: 1;
+  font-size: 0;
+}
+
+.product-params__item-value {
+  margin: 0;
+}

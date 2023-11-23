@@ -1,0 +1,27 @@
+.slider {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "button-prev viewport"
+    "previews viewport"
+    "button-next viewport";
+  gap: 20px 30px;
+  align-items: center;
+  justify-items: center;
+}
+
+.slider__previews {
+  grid-area: previews;
+}
+
+.slider__viewport {
+  grid-area: viewport;
+}
+
+.slider__button-prev {
+  grid-area: button-prev;
+}
+
+.slider__button-next {
+  grid-area: button-next;
+}
