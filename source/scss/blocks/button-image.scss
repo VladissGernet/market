@@ -20,11 +20,10 @@
 .button-image__img {
   width: 100%;
   height: 100%;
-  stroke: #b8b8cc;
-  stroke-width: 2px;
+  stroke: var(--color-border-control);
   fill: none;
 }
 
 .button-image--active .button-image__img {
-  stroke: #5236ff;
+  stroke: var(--color-bg-accent);
 }

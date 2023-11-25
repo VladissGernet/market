@@ -5,7 +5,6 @@
   margin: 0;
   padding: 60px 0 40px 0;
   gap: 10px;
-  border-top: 1px solid rgb(25, 25, 29, 0.1);
 }
 
 .pagination__link {
@@ -18,14 +17,14 @@
   line-height: 16px;
   color: inherit;
   text-decoration: none;
-  background-color: #f1f0f5;
+  background-color: var(--color-bg-card);
   border-radius: 6px;
   box-sizing: border-box;
 }
 
 .pagination__link--active {
-  color: #ffffff;
-  background-color: #5236ff;
+  color: var(--color-contrast);
+  background-color: var(--color-bg-accent);
   cursor: default;
 }
 
@@ -40,11 +39,11 @@
 .pagination__link-img {
   width: 7px;
   height: 12px;
-  fill: #19191d;
+  fill: var(--color);
 }
 
 .pagination__link--disabled .pagination__link-img {
-  fill: #b8b8cc;
+  fill: var(--color-border-disabled);
 }
 
 .pagination__link--prev {
@@ -53,4 +52,5 @@
 
 .pagination__link--next {
   margin-left: 10px;
+  transform: rotate(180deg);
 }

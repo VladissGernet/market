@@ -1,0 +1,33 @@
+.payment-method {
+  padding: 20px;
+  border: 1px solid #b8b8cc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.payment-method:hover {
+  opacity: 0.7;
+}
+
+.payment-method:active {
+  opacity: 0.5;
+}
+
+.payment-method--active {
+  border: 1px solid #5236ff;
+}
+
+.payment-method__title {
+  margin: 0 0 13px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.payment-method__content {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #787885;
+}

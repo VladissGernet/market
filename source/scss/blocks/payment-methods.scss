@@ -1,0 +1,20 @@
+.payment-methods {
+  padding-bottom: 40px;
+}
+
+.payment-methods__title {
+  margin: 0 0 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.payment-methods__content {
+  display: grid;
+  grid-template-columns: 435px 435px;
+  gap: 30px;
+}
+
+.payment-methods__control {
+  appearance: none;
+}

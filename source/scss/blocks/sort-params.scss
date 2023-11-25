@@ -1,0 +1,46 @@
+.sort-params {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.sort-params__title {
+  margin: 0;
+}
+
+.sort-params__list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sort-params__value {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.sort-params__value--asc::after {
+  content: "";
+  width: 14px;
+  height: 8px;
+  background-image: var(--sort-direction-background-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1, -1);
+}
+
+.sort-params__value--desc::after {
+  content: "";
+  width: 14px;
+  height: 8px;
+  background-image: var(--sort-direction-background-image);
+  background-position: center;
+  background-repeat: no-repeat;
+}

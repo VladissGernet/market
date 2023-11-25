@@ -1,0 +1,41 @@
+.checkout {
+  display: grid;
+  grid-template-columns: 900px 1fr;
+  grid-template-areas:
+    "backwards ."
+    "title aside"
+    "progress aside"
+    "content aside";
+  gap: 0 155px;
+  align-content: start;
+  padding-top: 40px;
+}
+
+.checkout__backwards {
+  grid-area: backwards;
+  margin-bottom: 40px;
+}
+
+.checkout__title {
+  grid-area: title;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 1;
+}
+
+.checkout__progress {
+  grid-area: progress;
+}
+
+.checkout__content {
+  grid-area: content;
+}
+
+.checkout__aside {
+  grid-area: aside;
+  align-self: start;
+  width: 465px;
+  box-sizing: border-box;
+}

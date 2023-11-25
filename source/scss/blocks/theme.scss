@@ -1,0 +1,53 @@
+:root {
+  --color: #19191d;
+  --color-secondary: #787885;
+  --color-accent: #5236ff;
+  --color-contrast: #ffffff;
+  --color-active-item: #b8b8cc;
+  --color-disabled: #787885;
+  --color-control-disabled: #b8b8cc;
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f5f5f7;
+  --color-bg-accent: #5236ff;
+  --color-border: rgb(25, 25, 29, 0.1);
+  --color-border-control: #b8b8cc;
+  --color-border-control-disabled: #e6e6f2;
+  --color-border-disabled: #b8b8cc;
+  --color-badge-hit: #c23564;
+  --color-bg-badge-hit: #fdedf2;
+  --color-badge-discount: #37833b;
+  --color-bg-badge-discount: #ebf7ed;
+  --color-badge-instalment: #e08701;
+  --color-bg-badge-instalment: #fff5e6;
+  --color-button-disabled: #b8b8cc;
+  --color-bg-button-disabled: #f1f0f5;
+  --color-bg-card: #f1f0f5;
+  --sort-direction-background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1h12M1 4h8.8M1 7h5.6' stroke='%235236FF' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+.theme--dark {
+  --color: #e2e2e6;
+  --color-secondary: #787885;
+  --color-accent: #2b70e7;
+  --color-contrast: #ffffff;
+  --color-active-item: #787885;
+  --color-disabled: #787885;
+  --color-control-disabled: #37373d;
+  --color-bg: #0a0c13;
+  --color-bg-secondary: #14161c;
+  --color-bg-accent: #2b70e7;
+  --color-border: rgb(226, 226, 230, 0.1);
+  --color-border-control: #787885;
+  --color-border-control-disabled: #37373d;
+  --color-border-disabled: #37373d;
+  --color-badge-hit: #e2e2e6;
+  --color-bg-badge-hit: #c23564;
+  --color-badge-discount: #e2e2e6;
+  --color-bg-badge-discount: #37833b;
+  --color-badge-instalment: #e2e2e6;
+  --color-bg-badge-instalment: #d48001;
+  --color-button-disabled: #37373d;
+  --color-bg-button-disabled: #14161c;
+  --color-bg-card: #14161c;
+  --sort-direction-background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1h12M1 4h8.8M1 7h5.6' stroke='%232B70E7' stroke-linecap='round'/%3E%3C/svg%3E");
+}

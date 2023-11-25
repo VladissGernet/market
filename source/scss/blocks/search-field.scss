@@ -1,0 +1,26 @@
+.search-field {
+  position: relative;
+}
+
+.search-field__input {
+  padding-right: 35px;
+}
+
+.search-field__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.search-field__img {
+  width: 16px;
+  height: 16px;
+  stroke: var(--color-border-control);
+}

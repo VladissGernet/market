@@ -1,11 +1,12 @@
-.logo__img {
-  display: block;
-}
-
 .logo:hover {
   opacity: 0.7;
 }
 
 .logo:active {
   opacity: 0.7;
+}
+
+.logo__img {
+  display: block;
+  fill: var(--color-bg-accent);
 }

@@ -25,8 +25,7 @@
 }
 
 .breadcrumbs__link--active {
-  color: #b8b8cc;
-  cursor: default;
+  color: var(--color-active-item);
 }
 
 .breadcrumbs__link:not(.breadcrumbs__link--active):hover {

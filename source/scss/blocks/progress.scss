@@ -1,0 +1,27 @@
+.progress {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #b8b8cc;
+  box-sizing: border-box;
+  border-radius: 40px;
+}
+
+.progress__item {
+  display: grid;
+  align-items: center;
+  padding: 14px 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1;
+  color: #787885;
+}
+
+.progress__item--active {
+  border: 1px solid #5236ff;
+  border-radius: 40px;
+  color: var(--color-accent);
+}

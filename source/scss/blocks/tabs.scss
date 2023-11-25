@@ -17,7 +17,7 @@
 .tabs__navigation-link {
   font-weight: 600;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
   color: inherit;
   text-decoration: none;
 }
@@ -35,4 +35,25 @@
 
 .tabs__navigation-link:not(.tabs__navigation-link--active):active {
   opacity: 0.5;
+}
+
+.tabs--light .tabs__navigation {
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.tabs--light .tabs__navigation-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.tabs--light .tabs__navigation-link--active {
+  color: #5236ff;
+  text-decoration: underline 1px dashed #5236ff;
+  text-underline-offset: 6px;
+}
+
+.tabs__page--fixed-width {
+  width: 435px;
 }

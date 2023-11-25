@@ -1,28 +1,41 @@
 .button {
-  padding: 14px 37px;
+  padding: 13px 35px;
   font-family: inherit;
   font-weight: 600;
   font-size: 16px;
   line-height: 1;
   color: #ffffff;
   text-decoration: none;
-  border: none;
-  background-color: #5236ff;
+  border: 1px solid var(--color-bg-accent);
+  background-color: var(--color-bg-accent);
   border-radius: 4px;
   box-sizing: border-box;
   cursor: pointer;
 }
 
-.button--disabled {
-  color: #b8b8cc;
-  background-color: #f1f0f5;
+.button--active {
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid var(--color-bg-accent);
+}
+
+.button--simple {
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid var(--color-border-control);
+}
+
+.button:disabled {
+  color: var(--color-button-disabled);
+  background-color: var(--color-bg-button-disabled);
+  border: 1px solid var(--color-bg-button-disabled);
   cursor: default;
 }
 
-.button:not(.button--disabled):hover {
+.button:not(:disabled):hover {
   opacity: 0.7;
 }
 
-.button:not(.button--disabled):active {
+.button:not(:disabled):active {
   opacity: 0.5;
 }
