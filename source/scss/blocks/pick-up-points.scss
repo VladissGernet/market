@@ -1,0 +1,25 @@
+.pick-up-points {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.pick-up-points__headline {
+  display: grid;
+  grid-template-columns: 465px 310px 125px;
+  padding: 0 0 10px 0;
+  color: #787885;
+  border-bottom: 1px solid rgb(25, 25, 29, 0.1);
+}
+
+.pick-up-points__row:not(:last-child) {
+  border-bottom: 1px solid rgb(25, 25, 29, 0.1);
+}
+
+.pick-up-points__caption {
+  display: grid;
+  grid-template-columns: 20px 425px 300px 125px;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+  padding: 20px 0;
+}
